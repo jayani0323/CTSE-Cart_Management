@@ -43,7 +43,7 @@ export default class CartController{
                 res.status(404);
             }
     }
-    public async getAllCart(req:any,res:any) {
+    public async getAllCarts(req:any,res:any) {
         this.logger.info("CartController - getAllCart()");
 
         await this.cartService.getAllCart()
