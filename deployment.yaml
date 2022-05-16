@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
         - name: cart-management
-          image: jayanisaumya/cartapi:latest
+          image: jayanisaumya/cart-management:latest
           imagePullPolicy: Always
           resources:
             requests:
@@ -31,7 +31,7 @@ spec:
               memory: "1Gi"
               cpu: "500m"
           ports:
-            - containerPort: 3000
+            - containerPort: 3006
           envFrom:
             - configMapRef:
                 name: cart-management-config
