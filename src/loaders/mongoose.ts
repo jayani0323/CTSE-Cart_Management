@@ -5,7 +5,7 @@ import {Logger} from "./logger";
 
 export default async (): Promise<Db> => {
     const logger = Logger.getInstance();
-    console.log("url = " + config.dbURL)
+
     const connection = await mongoose.connect(config.dbURL, {
         useNewUrlParser: true,
         useCreateIndex: true,
